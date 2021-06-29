@@ -1,0 +1,259 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=denver&term=california%20burrito
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.3
+      Authorization:
+      - ENV[Authorization]
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Dailylimit:
+      - '5000'
+      Ratelimit-Remaining:
+      - '4997'
+      Ratelimit-Resettime:
+      - '2021-06-30T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--useast1-b579557df-4z5l5; site=public_api_v3
+      Server:
+      - envoy
+      X-Cloudmap:
+      - routing_useast1
+      X-Proxied:
+      - 10-65-159-220-useast1bprod
+      X-Extlb:
+      - 10-65-159-220-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 29 Jun 2021 04:10:41 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-dal21250-DAL
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "I39WpOEQedHG6vxckAXCuw", "alias": "carnitas-california-denver",
+        "name": "Carnitas California", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/txNLR5W0AMYK8LIujMv9ZQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/carnitas-california-denver?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 53, "categories": [{"alias": "mexican", "title": "Mexican"},
+        {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}], "rating": 4.5,
+        "coordinates": {"latitude": 39.6894800235338, "longitude": -104.991905875504},
+        "transactions": [], "price": "$", "location": {"address1": "1470 S Santa Fe
+        Dr", "address2": "Ste A", "address3": null, "city": "Denver", "zip_code":
+        "80223", "country": "US", "state": "CO", "display_address": ["1470 S Santa
+        Fe Dr", "Ste A", "Denver, CO 80223"]}, "phone": "+13039365234", "display_phone":
+        "(303) 936-5234", "distance": 5444.809432714436}, {"id": "OIQh2YtOXjlKfWPx-t8iFA",
+        "alias": "la-loteria-taqueria-denver", "name": "La Loteria Taqueria", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/DKIXk92ySsCSvuOdeEpJBw/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/la-loteria-taqueria-denver?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 127, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.7158, "longitude": -104.9873},
+        "transactions": ["pickup", "delivery"], "location": {"address1": "42 S Broadway",
+        "address2": "", "address3": null, "city": "Denver", "zip_code": "80209", "country":
+        "US", "state": "CO", "display_address": ["42 S Broadway", "Denver, CO 80209"]},
+        "phone": "+17203899055", "display_phone": "(720) 389-9055", "distance": 2632.0975240231223},
+        {"id": "H7YjHBlcXq0I9nn70z-BXQ", "alias": "alameda-burrito-lakewood-2", "name":
+        "Alameda Burrito", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/2ARvEYg_sPDYH0IY5s76cA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/alameda-burrito-lakewood-2?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 156, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.6969405, "longitude": -105.0541395},
+        "transactions": ["delivery"], "price": "$", "location": {"address1": "5209
+        W Mississippi Ave", "address2": "", "address3": "", "city": "Lakewood", "zip_code":
+        "80226", "country": "US", "state": "CO", "display_address": ["5209 W Mississippi
+        Ave", "Lakewood, CO 80226"]}, "phone": "+13032380285", "display_phone": "(303)
+        238-0285", "distance": 8348.91516900012}, {"id": "iSQJcLyLNxSYcxP99R1vcw",
+        "alias": "tacos-rapidos-denver", "name": "Tacos Rapidos", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/AnLKaISRLOuT2Tjs3QbjHQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tacos-rapidos-denver?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 280, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 3.5, "coordinates": {"latitude": 39.6782302856445, "longitude":
+        -105.022659301758}, "transactions": ["delivery"], "price": "$", "location":
+        {"address1": "2800 W Evans Ave", "address2": "", "address3": "", "city": "Denver",
+        "zip_code": "80219", "country": "US", "state": "CO", "display_address": ["2800
+        W Evans Ave", "Denver, CO 80219"]}, "phone": "+13039350453", "display_phone":
+        "(303) 935-0453", "distance": 7787.783608327271}, {"id": "9cwMGGtkdAPBoPGO33MPAw",
+        "alias": "bonfire-burritos-golden", "name": "Bonfire Burritos", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/0m53SLZ7PYLzFo1owCcxUQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/bonfire-burritos-golden?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 390, "categories": [{"alias": "mexican", "title": "Mexican"},
+        {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}, {"alias": "bars",
+        "title": "Bars"}], "rating": 4.5, "coordinates": {"latitude": 39.747877, "longitude":
+        -105.210779}, "transactions": ["pickup", "delivery"], "price": "$", "location":
+        {"address1": "2221 Ford St", "address2": null, "address3": "", "city": "Golden",
+        "zip_code": "80401", "country": "US", "state": "CO", "display_address": ["2221
+        Ford St", "Golden, CO 80401"]}, "phone": "+17206451938", "display_phone":
+        "(720) 645-1938", "distance": 20611.80212726681}, {"id": "tXI7pIHhqHL9xwOIMUCdDA",
+        "alias": "burrito-giant-denver", "name": "Burrito Giant", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/f_H1VfJNjY_L8A4pk_QFNg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/burrito-giant-denver?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 211, "categories": [{"alias": "mexican", "title": "Mexican"},
+        {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}], "rating": 4.0,
+        "coordinates": {"latitude": 39.76956, "longitude": -105.04549}, "transactions":
+        ["delivery"], "price": "$", "location": {"address1": "4501 W 38th Ave", "address2":
+        "", "address3": "", "city": "Denver", "zip_code": "80212", "country": "US",
+        "state": "CO", "display_address": ["4501 W 38th Ave", "Denver, CO 80212"]},
+        "phone": "+13034770047", "display_phone": "(303) 477-0047", "distance": 7452.542478256776},
+        {"id": "LouGJ8uaBQGFg-rERp7lNg", "alias": "ralibertos-mexican-food-wheat-ridge-2",
+        "name": "Raliberto''s Mexican Food", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Z7y7vea1UPzn7ledGqqohg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/ralibertos-mexican-food-wheat-ridge-2?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 211, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 3.5, "coordinates": {"latitude": 39.772815, "longitude": -105.081024},
+        "transactions": ["delivery"], "price": "$", "location": {"address1": "4084
+        Wadsworth Blvd", "address2": "", "address3": "", "city": "Wheat Ridge", "zip_code":
+        "80033", "country": "US", "state": "CO", "display_address": ["4084 Wadsworth
+        Blvd", "Wheat Ridge, CO 80033"]}, "phone": "+13034676810", "display_phone":
+        "(303) 467-6810", "distance": 10346.682747882147}, {"id": "fbb7fsCGVMVkavIMm7_8KQ",
+        "alias": "taqueria-la-familia-denver", "name": "Taqueria La Familia", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/VkLvsnLvRTKncPKmBqJxfQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/taqueria-la-familia-denver?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 361, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.761887, "longitude": -105.020065},
+        "transactions": ["delivery"], "price": "$", "location": {"address1": "2642
+        W 32nd Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80211", "country": "US", "state": "CO", "display_address": ["2642 W 32nd
+        Ave", "Denver, CO 80211"]}, "phone": "+13034332332", "display_phone": "(303)
+        433-2332", "distance": 5170.503059518083}, {"id": "OfXj0dgT4fSXP9QRVBiW7g",
+        "alias": "marquez-food-denver-2", "name": "Marquez Food", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/VAFd_FBL0MoJqQjm9IgyJQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/marquez-food-denver-2?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 35, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 5.0, "coordinates": {"latitude": 39.75146, "longitude": -104.99796},
+        "transactions": [], "price": "$", "location": {"address1": "17th and Blake",
+        "address2": "", "address3": "", "city": "Denver", "zip_code": "80202", "country":
+        "US", "state": "CO", "display_address": ["17th and Blake", "Denver, CO 80202"]},
+        "phone": "", "display_phone": "", "distance": 2960.6064671574604}, {"id":
+        "I2dOQV2yqmSvmaYccC7zCQ", "alias": "los-carboncitos-denver", "name": "Los
+        Carboncitos", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/Z5TFhx4oIjzwagbK9ZzCow/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/los-carboncitos-denver?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 319, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.76914, "longitude": -105.00665},
+        "transactions": ["pickup", "delivery"], "price": "$", "location": {"address1":
+        "3757 Pecos St", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80211", "country": "US", "state": "CO", "display_address": ["3757 Pecos St",
+        "Denver, CO 80211"]}, "phone": "+13034580880", "display_phone": "(303) 458-0880",
+        "distance": 4862.647878050695}, {"id": "xbK3FtZoAVcnfB1GXLWvrA", "alias":
+        "tacos-el-metate-denver", "name": "Tacos El Metate", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/QWex1u9dTcpe4bBQSWo95w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tacos-el-metate-denver?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 63, "categories": [{"alias": "tacos", "title": "Tacos"}, {"alias":
+        "hotdogs", "title": "Fast Food"}], "rating": 4.5, "coordinates": {"latitude":
+        39.678958, "longitude": -104.959077}, "transactions": [], "location": {"address1":
+        "2060 S University Blvd", "address2": null, "address3": "", "city": "Denver",
+        "zip_code": "80210", "country": "US", "state": "CO", "display_address": ["2060
+        S University Blvd", "Denver, CO 80210"]}, "phone": "+17205109954", "display_phone":
+        "(720) 510-9954", "distance": 6360.4947398794575}, {"id": "I_5qpUxlG8GVBy8SL2ANqg",
+        "alias": "senor-burritos-denver", "name": "Senor Burritos", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Wcsqdl2LicuGem9QFVZBCA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/senor-burritos-denver?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 185, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.71823, "longitude": -104.98705},
+        "transactions": ["pickup", "delivery"], "price": "$", "location": {"address1":
+        "12 E 1st Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80203", "country": "US", "state": "CO", "display_address": ["12 E 1st Ave",
+        "Denver, CO 80203"]}, "phone": "+13037330747", "display_phone": "(303) 733-0747",
+        "distance": 2402.1289652197975}, {"id": "IpAA_PICEeDie13epoZUww", "alias":
+        "jus-burritos-broomfield", "name": "Jus'' Burritos", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/PkxzAifGIypjz8-rEn0AQA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/jus-burritos-broomfield?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 112, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 3.5, "coordinates": {"latitude": 39.91486, "longitude": -105.08234},
+        "transactions": ["delivery"], "price": "$", "location": {"address1": "7502
+        US Hwy 287", "address2": "", "address3": "", "city": "Broomfield", "zip_code":
+        "80020", "country": "US", "state": "CO", "display_address": ["7502 US Hwy
+        287", "Broomfield, CO 80020"]}, "phone": "+13034665969", "display_phone":
+        "(303) 466-5969", "distance": 22130.963836967647}, {"id": "HAg47reERsyPjDv4oumGbg",
+        "alias": "north-county-denver", "name": "North County", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/XtiVUvjz8zydiBt-gTzDyQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/north-county-denver?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 525, "categories": [{"alias": "mexican", "title": "Mexican"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "bars", "title": "Bars"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.7194091150175, "longitude":
+        -104.897376556345}, "transactions": ["pickup", "delivery"], "price": "$$",
+        "location": {"address1": "94 Rampart Way", "address2": "", "address3": "",
+        "city": "Denver", "zip_code": "80230", "country": "US", "state": "CO", "display_address":
+        ["94 Rampart Way", "Denver, CO 80230"]}, "phone": "+17205320106", "display_phone":
+        "(720) 532-0106", "distance": 6484.195509886443}, {"id": "JtPFBwZFeokGkzq2fgA12w",
+        "alias": "sabroso-fresh-mexican-grill-centennial", "name": "Sabroso Fresh
+        Mexican Grill", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/jCjIdxxW_rvF_FH6QFTMhQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/sabroso-fresh-mexican-grill-centennial?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 211, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.5807049, "longitude": -104.8870799},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "8719
+        E Dry Creek Rd", "address2": "", "address3": null, "city": "Centennial", "zip_code":
+        "80112", "country": "US", "state": "CO", "display_address": ["8719 E Dry Creek
+        Rd", "Centennial, CO 80112"]}, "phone": "+13037700114", "display_phone": "(303)
+        770-0114", "distance": 18622.280875866978}, {"id": "DhrIvBnaOnHVpLVcTMBuwQ",
+        "alias": "el-taco-de-mexico-denver", "name": "El Taco De Mexico", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/bphoto/VvItUvYe7drp_BhhE4xfVg/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/el-taco-de-mexico-denver?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 604, "categories": [{"alias": "mexican", "title": "Mexican"},
+        {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}, {"alias": "tex-mex",
+        "title": "Tex-Mex"}], "rating": 4.0, "coordinates": {"latitude": 39.7276260745483,
+        "longitude": -104.998299728836}, "transactions": ["delivery"], "price": "$",
+        "location": {"address1": "714 Santa Fe Dr", "address2": "", "address3": "",
+        "city": "Denver", "zip_code": "80204", "country": "US", "state": "CO", "display_address":
+        ["714 Santa Fe Dr", "Denver, CO 80204"]}, "phone": "+13036233926", "display_phone":
+        "(303) 623-3926", "distance": 2554.7406979079815}, {"id": "WYi75GrJj6letALupO1X-g",
+        "alias": "tacos-selene-aurora-2", "name": "Tacos Selene", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/fpx_mAX2e0tZpu2bNNsAyQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tacos-selene-aurora-2?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 405, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.72585, "longitude": -104.80971},
+        "transactions": ["delivery"], "price": "$", "location": {"address1": "15343
+        E 6th Ave", "address2": "Ste A", "address3": "", "city": "Aurora", "zip_code":
+        "80011", "country": "US", "state": "CO", "display_address": ["15343 E 6th
+        Ave", "Ste A", "Aurora, CO 80011"]}, "phone": "+13033437879", "display_phone":
+        "(303) 343-7879", "distance": 13769.770027466886}, {"id": "talElTT6P0jNvYrcxtBjTA",
+        "alias": "los-chingones-denver-denver-2", "name": "Los Chingones Denver",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Cl8sqXBjgXH28FUrqeqkvg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/los-chingones-denver-denver-2?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 816, "categories": [{"alias": "mexican", "title": "Mexican"},
+        {"alias": "bars", "title": "Bars"}], "rating": 4.0, "coordinates": {"latitude":
+        39.7574379, "longitude": -104.9868016}, "transactions": ["pickup", "delivery"],
+        "price": "$$", "location": {"address1": "2463 Larimer St", "address2": "",
+        "address3": "", "city": "Denver", "zip_code": "80205", "country": "US", "state":
+        "CO", "display_address": ["2463 Larimer St", "Denver, CO 80205"]}, "phone":
+        "+13032950686", "display_phone": "(303) 295-0686", "distance": 2817.986497243381},
+        {"id": "ZoxDX4vbjDANTmf-kRX0zQ", "alias": "casa-don-juan-denver", "name":
+        "Casa Don Juan", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/_MUvTLWKMzB5egoKAJLp6w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/casa-don-juan-denver?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 60, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.7892643527715, "longitude":
+        -104.977995269001}, "transactions": ["delivery"], "location": {"address1":
+        "5106 Washington St", "address2": "", "address3": null, "city": "Denver",
+        "zip_code": "80216", "country": "US", "state": "CO", "display_address": ["5106
+        Washington St", "Denver, CO 80216"]}, "phone": "+17203534846", "display_phone":
+        "(720) 353-4846", "distance": 6012.229176065129}, {"id": "afUB6FowiZZ1Mruqc3WXrQ",
+        "alias": "7-leguas-mexican-grille-denver-3", "name": "7 Leguas Mexican Grille",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/c2UnZaocYlF67W76j0JB3g/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/7-leguas-mexican-grille-denver-3?adjust_creative=WZA9V3SlVgnlKw9rC1m8hw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=WZA9V3SlVgnlKw9rC1m8hw",
+        "review_count": 266, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.739974, "longitude": -104.934039},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "4550
+        E Colfax Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80220", "country": "US", "state": "CO", "display_address": ["4550 E Colfax
+        Ave", "Denver, CO 80220"]}, "phone": "+13033224431", "display_phone": "(303)
+        322-4431", "distance": 3135.16665381278}], "total": 390, "region": {"center":
+        {"longitude": -104.97024536132812, "latitude": 39.73552421220229}}}'
+  recorded_at: Tue, 29 Jun 2021 04:10:41 GMT
+recorded_with: VCR 6.0.0
