@@ -1,6 +1,6 @@
 require 'simplecov'
 SimpleCov.start
-SimpleCov.add_filter ['spec', 'config', '/app/mailers', 'app/jobs', 'app/channels'
+SimpleCov.add_filter ['spec', 'config', '/app/mailers', 'app/jobs', 'app/channels']
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
@@ -9,7 +9,7 @@ require File.expand_path('../config/environment', __dir__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
-
+require 'webmock/rspec'
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
 # run as spec files by default. This means that files in spec/support that end
@@ -78,8 +78,5 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.ignore_localhost = true
   config.configure_rspec_metadata!
-  config.filter_sensitive_data( 'ENV[geo_key]' ) { ENV['geo_key'] }
-  config.filter_sensitive_data( 'ENV[appid]' ) { ENV['appid'] }
-  config.filter_sensitive_data( 'ENV[client_id]' ) { ENV['client_id'] }
-  config.filter_sensitive_data( 'ENV[token]' ) { ENV['token'] }
+  config.filter_sensitive_data( 'ENV[Authorization]' ) { ENV['Authorization'] }
 end
